@@ -4,17 +4,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 public class ClassSimple {
     private Long classNo;
-    private String genreText;
-    private String genreCode;
-    private String regionText;
-    private String regionCode;
-    private String typeText;
-    private String typeCode;
-    private String onlyText;
-    private String onlyCode;
+    private String genre;
+    private String region;
+    private String classType;
+    private String only;
+    private long instructorNo1;
+    private String instructorNickname1;
+    private long instructorNo2;
+    private String instructorNickname2;
+    private long clubNo;
+    private String clubName;
     private String title;
     private String classImage;
 }

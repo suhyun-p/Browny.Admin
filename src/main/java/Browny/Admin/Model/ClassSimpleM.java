@@ -21,16 +21,15 @@ public class ClassSimpleM {
 
     public ClassSimpleM(ClassSimple m) {
         this.setClassNo(m.getClassNo());
+        this.setGenre(Genre.valueOf(m.getGenre()).getValue());
+        this.setRegion(Region.valueOf(m.getRegion()).getValue());
 
-        this.setGenre(Genre.valueOf(m.getGenreCode()).getValue());
-        this.setRegion(Region.valueOf(m.getRegionCode()).getValue());
-
-        if(m.getTypeCode() != null) {
-            this.setClassType(ClassType.valueOf(m.getTypeCode()).getValue());
+        if(m.getClassType() != null) {
+            this.setClassType(ClassType.valueOf(m.getClassType()).getValue());
         }
 
-        if(m.getOnlyCode() != null) {
-            this.setOnly(Only.valueOf(m.getRegionCode()).getValue());
+        if(m.getOnly() != null) {
+            this.setOnly(Only.valueOf(m.getOnly()).getValue());
         }
 
         this.setTitle(m.getTitle());
